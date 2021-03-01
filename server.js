@@ -1,5 +1,8 @@
+const dotenv = require('dotenv')
 const express = require('express')
 const cors = require('cors')
+
+dotenv.config({ path: './.env' })
 
 const listings = require('./routes/listings')
 
