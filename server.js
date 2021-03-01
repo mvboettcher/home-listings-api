@@ -7,12 +7,13 @@ const app = express()
 
 app.use(cors())
 
-// Mount routers
 app.use('/api/listings', listings)
 
-const PORT = 5000
+const NODE_ENV = process.env.NODE_ENV || 'development'
+
+const PORT = process.env.PORT || 5000
 
 const server = app.listen(
   PORT,
-  console.log(`Server running on port ${PORT}...`)
+  console.log(`Server running in ${NODE_ENV} mode on port ${PORT}...`)
 )
