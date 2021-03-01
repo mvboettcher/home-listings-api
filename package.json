@@ -7,7 +7,6 @@
     "start": "nodemon start server.js"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
